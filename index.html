@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Donation System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🩸 Blood Donation System</h1>
+
+    <h2>Register as Donor</h2>
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="text" id="location" placeholder="Enter Location">
+    <input type="text" id="mobile" placeholder="Enter Mobile Number">
+
+    <select id="bloodGroup">
+        <option value="">Select Blood Group</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>O+</option>
+        <option>O-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+    </select>
+
+    <button onclick="addDonor()">Register</button>
+
+    <h2>Search Donors</h2>
+    <select id="searchGroup">
+        <option value="">Select Blood Group</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>O+</option>
+        <option>O-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+    </select>
+
+    <button onclick="searchDonor()">Search</button>
+
+    <div id="donorList"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
